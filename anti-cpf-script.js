@@ -44,8 +44,7 @@ function makeTel(nombreDeChiffre) {
     $('#q2').val(tossACoinToYourWitcher(['Oui','Non']))
     $('#q3').val(tossACoinToYourWitcher(['Oui','Non']))
     $('[type=checkbox]').click()
-
-
-    setTimeout(() => $('[type=submit]')[0].click(), 200)
-    setTimeout(() => {location.reload()}, 800)
+    
+    setTimeout(() => $('[type=submit]')[0].click(), 200 + Math.floor(Math.random()*200))
+    setTimeout(() => {location.reload()}, 800 + Math.floor(Math.random()*400))
 })();
